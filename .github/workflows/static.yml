@@ -35,6 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
       - run: npm install
+        working-directory: ./probny
       - run: npm run build -- --base=/probny/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
